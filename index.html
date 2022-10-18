@@ -4,9 +4,98 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Survey Type Website</title>
 </head>
 <body>
-    
+    <div class = "container">
+        <header class = "header">
+            <h1 id = "title">
+                Rregjistrohu ne sistem
+            </h1>
+            <p id = "description">
+                Ploteso pyetesorin per trajnerin me te cilin bete mesim
+            </p>
+        </header>
+        <form action="" id="survey-form">
+
+                <div class="form-group">
+                    <label for="name">Emer</label>
+                    <input type="text" name="name" id="name" class="formControl" placeholder="Vendos Emrin" required>
+                </div>
+
+                <div class="form-group">
+                   <label for="lastname">Mbimer</label>
+                   <input type="text" name="lastname" id="lastname" class="formControl" placeholder="Vendos Mbiemrin" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" class="formControl" placeholder="Vendos Adresen E-Mail" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">Emri i Trajnerit</label>
+                    <input tpe="text" name="trainername" id="trainername" class="formControl" placeholder="Vendos Emrin e Trajnerit" required>
+                </div>
+
+                <div class="form-group">
+                    <p id="funct">Gjuha</p>
+                    <select name="role" required id="dropdown" class="formControl">
+                        <option value disabled selected> Vendos Gjuhen </option>
+                        <option value="al_al">Shqip</option>
+                        <option value="en_us">Anglisht</option>
+                        <option value="it_it">Italisht</option>
+                        <option value="misc">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <p id="funct">Beji Rate Trajnerit</p>
+                    <label for="">
+                        <input type="radio" name="source" value="rating" class="inputRadio">
+                        <span class="fa fa-star checked"></span>
+                    </label>
+
+                    <label for="">
+                        <input type="radio" name="source" value="tv-ads" class="inputRadio">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </label>
+                    <label for="">
+                        <input type="radio" name="source" value="social-media" class="inputRadio">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </label>
+                    <label for="">
+                        <input type="radio" name="source" value="newspaper" class="inputRadio">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </label>
+                    <label for="">
+                        <input type="radio" name="source" value="other" class="inputRadio">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <p id="quest">Koment</p>
+                    <textarea name="feedback"  cols="30" rows="5"  id="feedback" class="textarea" placeholder="Shkruaj nje koment"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="submit" class="btn">Submit</button>
+                </div>
+        </form>
+    </div>
 </body>
 </html>
+
