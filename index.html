@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="index.js"></script>
 
     <title>Survey Type Website</title>
 </head>
@@ -28,7 +30,7 @@
                 </div>
 
                 <div class="form-group">
-                   <label for="lastname">Mbimer</label>
+                   <label for="lastname">Mbiemer</label>
                    <input type="text" name="lastname" id="lastname" class="formControl" placeholder="Vendos Mbiemrin" required>
                 </div>
 
@@ -55,45 +57,31 @@
 
                 <div class="form-group">
                     <p id="funct">Beji Rate Trajnerit</p>
-                    <label for="">
-                        <input type="radio" name="source" value="rating" class="inputRadio">
-                        <span class="fa fa-star checked"></span>
-                    </label>
-
-                    <label for="">
-                        <input type="radio" name="source" value="tv-ads" class="inputRadio">
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                    </label>
-                    <label for="">
-                        <input type="radio" name="source" value="social-media" class="inputRadio">
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                    </label>
-                    <label for="">
-                        <input type="radio" name="source" value="newspaper" class="inputRadio">
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                    </label>
-                    <label for="">
-                        <input type="radio" name="source" value="other" class="inputRadio">
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                    </label>
+                    <div class="star-rating"> 
+                        <h3>Star rating</h3>
+                        <div class="rating">
+                          <input type="radio" id="star5" name="rating" value="5" class="radio-1" />
+                          <label for="star5" class="star star-1" title="Excellent"></label>
+                          <input type="radio" id="star4" name="rating" value="4" class="radio-2" />
+                          <label for="star4" class="star star-2" title="Great"></label>
+                          <input type="radio" id="star3" name="rating" value="3" class="radio-3" />
+                          <label for="star3" class="star star-3" title="Average"></label>
+                          <input type="radio" id="star2" name="rating" value="2" class="radio-4" />
+                          <label for="star2" class="star star-4" title="Poor"></label>
+                          <input type="radio" id="star1" name="rating" value="1" class="radio-5" />
+                          <label for="star1" class="star star-5" title="Bad"></label>
+                        </div>
+                      </div>
                 </div>
+
                 <div class="form-group">
-                    <p id="quest">Koment</p>
+                    <p id="funct">Koment</p>
                     <textarea name="feedback"  cols="30" rows="5"  id="feedback" class="textarea" placeholder="Shkruaj nje koment"></textarea>
                 </div>
                 <div class="form-group">
                     <button type="submit" id="submit" class="btn">Submit</button>
                 </div>
+                
         </form>
     </div>
 </body>
