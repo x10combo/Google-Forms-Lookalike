@@ -368,3 +368,26 @@ input[type=radio] + .star-1:hover:before, input[type=radio] + .star-1:hover:afte
 .rating:not(:hover) .radio-1:checked ~ .star:before, .rating:not(:hover) .radio-1:checked ~ .star:after {
   border-bottom-color: #14892c;
 }/*# sourceMappingURL=style.css.map */
+
+
+
+/*Shiny Lines CSS*/
+.shiny-line {
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  background-color: white;
+  animation: line-animation 5s linear infinite;
+}
+
+@keyframes line-animation {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+
+/*----END----*/
