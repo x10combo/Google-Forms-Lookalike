@@ -14,7 +14,15 @@ if($conn->connect_error){
     die('Connection Failed  :  ' $conn->connect_error);
 }
 else{
-    $stmt - $conn->prepare("Insert into registration(name, lastname, email, langselect, feedback
+    $stmt = $conn->prepare("Insert into registration(name, lastname, email, trainername, langselect, feedback)
+    values(?,?,?,?,?,?)");
+    $stmt -> bind_param("sssss",$name, $lastname, $email, $trainername, $langselect,$feedback);
+    $stmt -> execute();
+
+    echo "Your opinion has been sent to us. Thank you for participating.";
+
+    $stmt-> close();
+    $conn-> close();
 }
 
 
