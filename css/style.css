@@ -374,20 +374,35 @@ input[type=radio] + .star-1:hover:before, input[type=radio] + .star-1:hover:afte
 /*Shiny Lines CSS*/
 .shiny-line {
   position: absolute;
-  width: 3px;
+  width: 15px;
   height: 100%;
   background-color: white;
-  animation: line-animation 5s linear infinite;
+  animation: line-animation 2s ease-in-out infinite;
 }
 
 @keyframes line-animation {
   0% {
-    transform: translateY(-100%);
+    transform: translateY(-50%) scaleX(0);
+    opacity: 0;
   }
-  100% {
-    transform: translateY(100%);
+  25% {
+    transform: translateY(-5%) scaleX(3);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(-120%) scaleX(4);
+    opacity: 0;
   }
 }
 
+.left {
+  left: 80px;
+  animation-delay: -9s;
+}
+
+.right {
+  right: 80px;
+  animation-delay: -9s;
+}
 
 /*----END----*/
